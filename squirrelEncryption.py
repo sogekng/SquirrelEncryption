@@ -4,28 +4,24 @@ chars = string.ascii_letters + string.digits + string.punctuation
 
 def squirrel(password):
     listaCripto = []
-    cont = 0
-    cont2 = 0
-    cont3 = 1
+    cont = 1
     passwordCripto = ''
 
     for j in password:
         if j in chars:
-            for num, i in enumerate(chars):
+            for i in chars:
                 if j == i:
-                    cont = int(ord(i)) + len(password)
-                    cont2 = int(ord(i)) + len(password)
-                    cont+=cont3
-                    cont2+=cont3
-                    cont+=cont2
+                    calc = int(ord(i))+len(password)+cont + int(ord(i))+len(password)-(cont*-1)
                     
-                    for k in range(len(password)):
-                        if cont >= len(chars):
-                            cont-=len(chars)
-                        elif cont <= len(chars):
-                            listaCripto.append(chars[cont])
+                    for k in range(len(password)*10):
+                        if calc >= len(chars):
+                            calc-=len(chars)
+                        elif calc <= len(chars):
+                            print(calc)
+                            listaCripto.append(chars[calc])
+                            print(listaCripto)
                             break
-        cont3+=1
+        cont+=1
     
     for i in listaCripto:
         passwordCripto+=i
