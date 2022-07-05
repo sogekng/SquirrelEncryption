@@ -1,6 +1,6 @@
 ### How Squirrel Method works:
 
-### Encryption is done with **Calculation**, let's take an example with your password being 'abelha',
+### Encryption is done with *Calculation*, let's take an example with your password being 'abelha',
 #### 'a' = 97 of ASCII numerical order, the sum would be 97+6+(exp(1)=1)+=97+6+(exp(-1)=-1), so 'a' = 'u',
 #### 'b' = 98 of ASCII numerical order, the sum would be 98+6+(exp(1)=2)+=98+6+(exp(-1)=-2), so 'b' = 'y',
 #### 'e' = 101 of the ASCII numerical order, the sum would be 101+6+(exp(1)=3)+=101+6+(exp(-1)=-3), so 'e' = 'G',
