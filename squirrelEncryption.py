@@ -17,9 +17,7 @@ def squirrel(password):
                         if calc >= len(chars):
                             calc-=len(chars)
                         elif calc <= len(chars):
-                            print(calc)
                             listEncripto.append(chars[calc])
-                            print(listEncripto)
                             break
         cont+=1
     
