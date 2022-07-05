@@ -3,7 +3,7 @@ import string
 chars = string.ascii_letters + string.digits + string.punctuation
 
 def squirrel(password):
-    listaCripto = []
+    listEncripto = []
     cont = 1
     passwordCripto = ''
 
@@ -18,12 +18,12 @@ def squirrel(password):
                             calc-=len(chars)
                         elif calc <= len(chars):
                             print(calc)
-                            listaCripto.append(chars[calc])
-                            print(listaCripto)
+                            listEncripto.append(chars[calc])
+                            print(listEncripto)
                             break
         cont+=1
     
-    for i in listaCripto:
+    for i in listEncripto:
         passwordCripto+=i
     
     return print(passwordCripto)
