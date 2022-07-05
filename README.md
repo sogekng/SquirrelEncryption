@@ -8,6 +8,6 @@
 #### 'h' = 104 da ordem numerica ASCII, a soma seria 104+6+(exp(1)=5)+=104+6+(exp(-1)=-5), então 'h' = 'Q',
 #### 'a' = 97 da ordem numerica ASCII, a soma seria 97+6+(exp(1)=6)+=97+6+(exp(-1)=-6), então 'a' = 'E'.
 
-#### Porém, depende bastante do tamanho da senha, pois se voce tentar encriptografar apenas a primeira letra da sua senha que seria o 'a', por exemplo, o calculo sendo 'a' = 97 da ordem numerica ASCII, a soma seria 97+1+(exp(1)=1)+=97+1+(exp(-1)=-1), então 'a' = 'k'.
+#### O resultado depende bastante do tamanho da senha, pois se voce tentar encriptografar apenas a primeira letra da sua senha que seria o 'a', por exemplo, o calculo sendo 'a' = 97 da ordem numerica ASCII, a soma seria 97+1+(exp(1)=1)+=97+1+(exp(-1)=-1), então 'a' = 'k'.
 
 #### *Calculo - ordem numerica do caracter em ASCII + tamanho da senha + exponencial(1) += ordem numerica do caracter em ASCII + tamanho da senha + exponencial(-1)*.
